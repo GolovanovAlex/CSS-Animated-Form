@@ -72,3 +72,33 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.container i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.container:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+.container i:nth-child(1) {
+  border-radius: 39% 61% 27% 73% / 57% 29% 71% 43%;
+  animation: animate 10s linear infinite;
+}
+.container i:nth-child(2) {
+  border-radius: 23% 77% 31% 69% / 71% 30% 70% 29%;
+  animation: animate 11s linear infinite;
+}
+.container i:nth-child(3) {
+  border-radius: 40% 56% 17% 84% / 37% 65% 34% 63%;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
