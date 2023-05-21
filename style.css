@@ -42,7 +42,33 @@ body {
 .input__box button {
   position: relative;
   width: 100%;
-  padding: 12px 20px;
+  font-size: 1.2em;
+  color: #fff;
   background: transparent;
   border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 12px 20px;
+  outline: none;
+  box-shadow: none;
+}
+.input__box button {
+  font-size: 1.2em;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+.input__box input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.input__links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.input__links a {
+  text-decoration: none;
+  color: #fff;
 }
