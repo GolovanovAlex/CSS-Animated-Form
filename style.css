@@ -83,16 +83,16 @@ body {
   filter: drop-shadow(0 0 20px var(--clr));
 }
 .container i:nth-child(1) {
-  border-radius: 39% 61% 27% 73% / 57% 29% 71% 43%;
-  animation: animate 10s linear infinite;
+  border-radius: 66% 34% 67% 33% / 27% 65% 35% 73%;
+  animation: animate 14s linear infinite;
 }
 .container i:nth-child(2) {
-  border-radius: 23% 77% 31% 69% / 71% 30% 70% 29%;
-  animation: animate 11s linear infinite;
+  border-radius: 53% 47% 53% 47% / 50% 40% 60% 50%;
+  animation: animate 13s linear infinite;
 }
 .container i:nth-child(3) {
-  border-radius: 40% 56% 17% 84% / 37% 65% 34% 63%;
-  animation: animate 8s linear infinite;
+  border-radius: 41% 59% 43% 57% / 57% 30% 70% 43%;
+  animation: animate 15s linear infinite;
 }
 @keyframes animate {
   0% {
@@ -101,4 +101,13 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.container:hover i:nth-child(1) {
+  animation: animate 5s linear infinite;
+}
+.container:hover i:nth-child(2) {
+  animation: animate 7s linear infinite;
+}
+.container:hover i:nth-child(3) {
+  animation: animate 6s linear infinite;
 }
